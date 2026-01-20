@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Advertencia de Seguridad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script>
+    function exitNetwork() {
+        alert("Se recomienda desconectarse de esta red WiFi por seguridad.");
+        window.location.href = "https://www.google.com";
+    }
+    
+    function showInfo() {
+        document.getElementById("infoBox").style.display = "block";
+    }
+    </script>
+    
+<body>
+
+    <div class="container">
+        <h1>⚠️ ADVERTENCIA DE SEGURIDAD</h1>
+
+        <h2>Red WiFi No Segura Detectada</h2>
+
+        <p class="alert-text">
+            Esta red inalámbrica no cuenta con mecanismos de seguridad adecuados.
+            Tu información personal podría estar en riesgo.
+        </p>
+
+        <ul>
+            <li>Robo de contraseñas</li>
+            <li>Interceptación de datos</li>
+            <li>Acceso no autorizado a información privada</li>
+        </ul>
+
+        <p class="education">
+            Este escenario es una <strong>simulación académica</strong> utilizada
+            para demostrar los riesgos de conectarse a redes WiFi abiertas.
+        </p>
+
+        <div class="buttons">
+            <button class="danger" onclick="exitNetwork()">Salir de la red</button>
+            <button class="info" onclick="showInfo()">¿Por qué es peligrosa?</button>
+        </div>
+        
+        <div id="infoBox" class="info-box">
+            <h3>¿Por qué esta red es peligrosa?</h3>
+            <p>
+                Las redes WiFi abiertas no utilizan cifrado, lo que permite que un atacante
+                pueda interceptar la información transmitida por los dispositivos conectados.
+            </p>
+            <p>
+                Ataques comunes incluyen suplantación de redes, captura de tráfico y
+                manipulación de datos.
+            </p>
+        </div>
+        
+
+        <p class="legal">
+            Este sistema no recopila ni almacena datos personales.<br>
+            Proyecto educativo con fines académicos.
+        </p>
+    </div>
+
+</body>
+</html>
